@@ -7,6 +7,13 @@ const createUser = (req, res) => {
     const user = req.body
 
     usersDb.push(user)
+    user.api_key = user.username + user.password;
+    if (req.body.username === 'vivian') {
+        user.role = 'admin'
+    }
+    else {
+        user.role = 'user'
+    }
 
     fs.writeFileSync('./users/user.json', JSON.stringify(usersDb, null, 4), (err) => {
         if (err) {

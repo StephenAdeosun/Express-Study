@@ -1,9 +1,8 @@
 module.exports = {
     "inventory": [
         {
-            "name": "Sword",
-            "price": 100,
-            "quantity": 10,
+            "name": "new product",
+            "price": "1234",
             "id": 1
         },
         {
@@ -14,10 +13,10 @@ module.exports = {
         {
             "name": "bag",
             "price": "1234",
-            "id": 4
+            "id": 5
         },
         {
-            "name": "bag",
+            "name": "new product",
             "price": "1234",
             "id": 5
         }
